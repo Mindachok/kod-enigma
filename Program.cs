@@ -12,7 +12,7 @@ class Program
         using var db = new CarpoolContext();
         await db.Database.EnsureCreatedAsync();
 
-        var bot = new TelegramBotClient("7557499187:AAF_vBgOVLlCPZGJzK3vgD6Zth8YZ8fMbok");
+        var bot = new TelegramBotClient("Токен бота :)");
         
         bot.StartReceiving(UpdateHandler, ErrorHandler);
         
